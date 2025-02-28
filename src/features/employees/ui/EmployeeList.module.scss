@@ -1,0 +1,86 @@
+.employeeList {
+  display: grid;
+  gap: 15px;
+  padding: 20px;
+  z-index: 1;
+}
+
+
+.employeeName {
+  font-weight: bold;
+  color: #2c3e50;
+
+}
+.employeeOne {
+  display: flex;
+  gap: 20px;
+}
+.employeeRole {
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.employeePhone {
+  color: #3498db;
+}
+
+.employeeArchive {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  color: red;
+  border-radius: 14px;
+  width: 100px;
+  padding: 5px;
+  text-align: right;
+  font-style: italic;
+}
+
+
+
+.employeeItem {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20%;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+
+}
+
+.employeeItem:hover {
+  transform: scale(1.02);
+}
+
+.employeeItem::after {
+  content: "Изменить";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.employeeItem:hover::after {
+  opacity: 1;
+}
+
+.employeeItem > * {
+  transition: opacity 0.2s;
+}
+
+.employeeItem:hover > * {
+  opacity: 0.3;
+}
+
