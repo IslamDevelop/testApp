@@ -5,7 +5,6 @@
   z-index: 1;
 }
 
-
 .employeeName {
   font-weight: bold;
   color: #2c3e50;
@@ -84,3 +83,17 @@
   opacity: 0.3;
 }
 
+@media (max-width: 650px) {
+  .employeeItem {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .employeeArchive {
+    right: 0;
+    top: 0;
+    font-size: 13px;
+  }
+  .employeeOne {
+    flex-direction: column;
+  }
+}

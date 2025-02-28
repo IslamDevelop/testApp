@@ -20,3 +20,12 @@
     align-items: center;
     gap: 5px;
   }
+
+  @media (max-width: 650px) {
+    .filtersContainer {
+      flex-direction: column;
+    }
+    select, label {
+      text-align: center;
+    }
+  }
