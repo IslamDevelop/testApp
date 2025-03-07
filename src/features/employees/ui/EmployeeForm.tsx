@@ -64,7 +64,7 @@ export const EmployeeForm = ({ employee, onSubmit }: EmployeeFormProps) => {
             },
           }}
           render={({ field }) => (
-            <InputMask type="data" mask="__.__.____" {...field} replacement={{ _: /\d/ }} placeholder="дд.мм.гггг"  />
+            <InputMask type="data" showMask mask="дд.мм.гггг" {...field} replacement={{ д: /\d/,м: /\d/,г: /\d/ }} placeholder="дд.мм.гггг"  />
             
           )}
         />
